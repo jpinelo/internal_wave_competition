@@ -52,7 +52,7 @@ X_val_scaled = scaler.transform(X_val)
 X_test_scaled = scaler.transform(X_test)
 
 # Create and train the model
-model = MLPClassifier(hidden_layer_sizes=(100, 50), max_iter=5000, random_state=42)
+model = MLPClassifier(hidden_layer_sizes=(100, 50), max_iter=5000, random_state=1)
 model.fit(X_train_scaled, y_train)
 
 # Use the model to make predictions on the validation set
@@ -86,4 +86,5 @@ print(f"F1 Score: {f1:.4f}")
 print(f"ROC AUC: {roc_auc:.4f}")
 
 # Save the results to a CSV file
-#test_df[['id', 'predicted_probability']].to_csv('/Users/jpinelo/Dropbox/JP_Lab/AIRCentre/2-Projects/54-Internal_waves/Data/submission-baseline.csv', index=False)
+test_df['id'] = test_df['id'].str.replace('.png', '')
+test_df[['id', 'predicted_probability']].to_csv('/Users/jpinelo/Dropbox/JP_Lab/AIRCentre/2-Projects/54-Internal_waves/Data/submission-baseline.csv', index=False)
