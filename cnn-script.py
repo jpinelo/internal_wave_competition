@@ -86,4 +86,4 @@ print(f"F1 Score: {f1:.4f}")
 print(f"ROC AUC: {roc_auc:.4f}")
 
 # Save the results to a CSV file
-test_df[['id', 'predicted_probability']].to_csv('/Users/jpinelo/Dropbox/JP_Lab/AIRCentre/2-Projects/54-Internal_waves/Data/submission-baseline.csv', index=False)
+#test_df[['id', 'predicted_probability']].to_csv('/Users/jpinelo/Dropbox/JP_Lab/AIRCentre/2-Projects/54-Internal_waves/Data/submission-baseline.csv', index=False)
