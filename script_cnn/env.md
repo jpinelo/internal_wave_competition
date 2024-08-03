@@ -13,8 +13,6 @@ pipenv install numpy==1.26.0
 pipenv install scikit-learn==1.5.1
 pipenv install scikit-image==0.24.0
 pipenv install tensorflow
-pipenv install matplotlib
-pipenv install seaborn
 
 # deactivate the env
 exit

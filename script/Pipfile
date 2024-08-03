@@ -8,6 +8,7 @@ pandas = "==2.0.0"
 numpy = "==1.26.0"
 scikit-learn = "==1.5.1"
 scikit-image = "==0.24.0"
+tensorflow = "*"
 
 [dev-packages]
 ipykernel = "*"
